@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thebrokegamers.kolkatanavigator.BusFragment"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/topBusPanel"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/busButtonLeft"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/capsule_small_left_button">
+                <TextView
+                    android:id="@+id/busButtonLeftText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="A To B"
+                    android:textColor="#1C3144"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/busButtonCenterLeft"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/colorAccent">
+                <TextView
+                    android:id="@+id/busButtonCenterLeftText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Bus No."
+                    android:textColor="#FFFFFF"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/busButtonCenterRight"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/colorAccent">
+                <TextView
+                    android:id="@+id/busButtonCenterRightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="AC"
+                    android:textColor="#FFFFFF"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/busButtonRight"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/capsule_small_right_button_deact">
+                <TextView
+                    android:id="@+id/busButtonRightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NON AC"
+                    android:textColor="#FFFFFF"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/sourceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Source..."
+                android:textColor="#FFFFFF"
+                android:theme="@style/AppTheme.MyStyle"
+                android:focusableInTouchMode="true"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:textSize="16sp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_text"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="2dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/destinationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Destination..."
+                android:textColor="#FFFFFF"
+                android:theme="@style/AppTheme.MyStyle"
+                android:focusableInTouchMode="true"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/sourceDestinationImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/source_destination_icon" />
+
+        <RelativeLayout
+            android:id="@+id/searchBus"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bottom_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_button"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_bus_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:tint="#FFFFFF"/>
+            <TextView
+                android:id="@+id/searchBusText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:focusable="true"
+        android:id="@+id/busList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBusPanel"
+        android:background="#FFFFFF"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <RelativeLayout
+        android:id="@+id/taxiNumberHolder"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/background_square_yellow">
+
+        <ImageView
+            android:id="@+id/taxiImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taxiNumberText"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_local_taxi_black_24dp"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/taxiNumberText"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="TAXI"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/taxiSourceText"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/taxiNumberHolder"
+        android:layout_toRightOf="@+id/taxiNumberHolder"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent_0.8"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taxiDestinationText"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_toEndOf="@+id/taxiNumberHolder"
+        android:layout_toRightOf="@+id/taxiNumberHolder"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/taxiSourceText"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent_0.6"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

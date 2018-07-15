@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <RelativeLayout
+        android:id="@+id/ferryHolder"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/background_square_yellow">
+
+        <ImageView
+            android:id="@+id/ferryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_directions_boat_black_36dp"
+            android:tint="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ferrySourceText"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ferryHolder"
+        android:layout_toRightOf="@+id/ferryHolder"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent_0.8"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ferryDestinationText"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@+id/ferrySourceText"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/ferryHolder"
+        android:layout_toRightOf="@+id/ferryHolder"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent_0.6"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/ferryTextHolder"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_toEndOf="@+id/ferryHolder"
+        android:layout_toRightOf="@+id/ferryHolder"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp">
+        <View
+            android:id="@+id/ferryDivider"
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:background="@color/colorAccent_0.2"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/ferryStartTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent_0.8"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/ferryDivider"
+            android:layout_toRightOf="@+id/ferryDivider"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="Start Time - "/>
+
+        <TextView
+            android:id="@+id/ferryEndTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center|end"
+            android:textColor="@color/colorAccent_0.6"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/ferryDivider"
+            android:layout_toRightOf="@+id/ferryDivider"
+            android:layout_below="@+id/ferryStartTimeText"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="End Time - "/>
+
+        <TextView
+            android:id="@+id/ferryTimeIntervalText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorAccent_0.4"
+            android:textSize="12sp"
+            android:text="Interval - "/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

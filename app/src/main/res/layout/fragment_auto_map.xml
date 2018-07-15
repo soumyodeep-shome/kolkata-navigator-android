@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    tools:context="com.thebrokegamers.kolkatanavigator.AutoMapFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/autoNumberTranslucentBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/transport_number_background">
+
+        <RelativeLayout
+            android:id="@+id/autoNumberTopContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/autoNumberIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/autoNumberIconText"
+                android:layout_toStartOf="@+id/autoNumberIconText"
+                android:src="@drawable/auto_icon"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/autoNumberIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="340dp"
+            android:layout_height="400dp"
+            android:id="@+id/map"
+            android:layout_below="@+id/autoNumberTopContainer"
+            android:clickable="true"
+            android:apiKey="@string/google_maps_key"/>
+
+        <TextView
+            android:clickable="true"
+            android:layout_below="@+id/map"
+            android:id="@+id/autoNumberCloseButton"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:text="CLOSE"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

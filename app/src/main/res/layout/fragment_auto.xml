@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thebrokegamers.kolkatanavigator.AutoFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:id="@+id/topAutoPanel"
+        android:background="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/autoButtonLeft"
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/autoAtoBImage"
+                    android:src="@drawable/capsule_medium_left_button"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/autoAtoBText"
+                    android:text="A To B"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/autoButtonRight"
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/autoStandImage"
+                    android:src="@drawable/capsule_medium_right_button_deact"
+                    android:tint="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/autoStandText"
+                    android:text="Auto Stand"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/sourceInputAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Source Stop"
+                android:textColor="#FFFFFF"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:theme="@style/AppTheme.MyStyle" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_text"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="2dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/destinationInputAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Destination Stop"
+                android:textColor="#FFFFFF"
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:theme="@style/AppTheme.MyStyle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/sourceDestinationImageAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/source_destination_icon" />
+
+        <RelativeLayout
+            android:id="@+id/searchAuto"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bottom_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_button"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/auto_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:tint="#FFFFFF"/>
+            <TextView
+                android:id="@+id/autoSearchText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewAuto"
+        android:layout_below="@+id/topAutoPanel"
+        android:background="@color/colorWhite"/>
+</RelativeLayout>

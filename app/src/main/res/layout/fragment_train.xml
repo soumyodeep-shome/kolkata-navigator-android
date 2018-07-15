@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thebrokegamers.kolkatanavigator.TrainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/topTrainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/trainButtonLeft"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/capsule_small_left_button_deact">
+
+                <TextView
+                    android:id="@+id/trainButtonLeftText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Set Time"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/trainButtonRight"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/capsule_small_right_button_deact">
+
+                <TextView
+                    android:id="@+id/trainButtonRightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Set Date"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/sourceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/top_text"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/top_text"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Source..."
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:textColor="#FFFFFF"
+                android:theme="@style/AppTheme.MyStyle"
+                android:textSize="16sp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/reverseSourceDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reversible_arrows"
+            android:layout_alignTop="@+id/bottom_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_text"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="2dp"
+            android:theme="@style/AppTheme.MyStyle">
+
+            <AutoCompleteTextView
+                android:id="@+id/destinationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Destination..."
+                android:inputType="textNoSuggestions|textCapCharacters"
+                android:textColor="#FFFFFF"
+                android:theme="@style/AppTheme.MyStyle"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/sourceDestinationImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/source_destination_icon" />
+
+        <RelativeLayout
+            android:id="@+id/searchTrain"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bottom_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_button" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_directions_railway_black_24dp"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/searchTrainText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/trainList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topTrainPanel"
+        android:background="#FFFFFF"/>
+
+
+</RelativeLayout>

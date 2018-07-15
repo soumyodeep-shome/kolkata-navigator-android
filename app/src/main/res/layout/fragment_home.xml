@@ -1,0 +1,386 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thebrokegamers.kolkatanavigator.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/homeTopContainer"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@color/colorPrimary">
+        <HorizontalScrollView
+            android:id="@+id/homeScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/homeBusContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeBusIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_directions_bus_black_24dp"
+
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeBusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeBusIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Bus"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/homeMetroContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeMetroIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_directions_subway_black_24dp"
+
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeMetroText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeMetroIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Metro"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeAutoContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeAutoIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/auto_icon"
+
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeAutoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeAutoIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Auto"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeTrainContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeTrainIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_directions_railway_black_24dp"
+
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeTrainText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeTrainIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Train"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeTramContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeTramIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_directions_tram_black_24dp"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeTramText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeTramIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Tram"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeTaxiContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeTaxiIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_local_taxi_black_24dp"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeTaxiText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeTaxiIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Taxi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeFerryContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#DDDDDD" />
+
+                    <ImageView
+                        android:id="@+id/homeFerryIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_directions_boat_black_24dp"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeFerryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeFerryIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Ferry"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/homeEmergencyContainer"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeEmergencyIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_local_hospital_black_24dp"
+                        android:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/homeEmergencyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeEmergencyIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="Emergency"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/homeScrollView">
+
+            <RelativeLayout
+                android:id="@+id/homeButtonLeft"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:background="@drawable/capsule_small_left_button">
+
+                <TextView
+                    android:id="@+id/homeButtonLeftText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Favourites"
+                    android:textColor="@color/colorAccent" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/homeButtonRight"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/capsule_small_right_button_deact">
+
+                <TextView
+                    android:id="@+id/homeButtonRightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Recent"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/homeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeTopContainer"
+        android:background="#FFFFFF"/>
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_button" />
+    <RelativeLayout
+        android:id="@+id/homeTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeTopContainer">
+        <TextView
+            android:id="@+id/homeTutorialText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorAccent_0.6"
+            android:textSize="30sp"
+            android:padding="8dp"
+            android:text="Click the floating button to add favourites."
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorAccent"
+            android:alpha="0.1"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

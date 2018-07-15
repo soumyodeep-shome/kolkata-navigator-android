@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+
+    <RelativeLayout
+        android:id="@+id/trainNumberHolder"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/background_square_yellow">
+
+        <ImageView
+            android:id="@+id/trainImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trainNumberText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_directions_railway_black_24dp"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/trainNumberText"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="88888"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trainNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="64dp"
+        android:gravity="center"
+        android:text="LKPR-SDAH MATRIBHUMI LOCAL"
+        android:textColor="@color/colorAccent_0.6"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/trainNameText"
+        android:layout_marginLeft="64dp">
+
+        <TextView
+            android:id="@+id/trainStartTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/trainTimeDivider"
+            android:layout_toStartOf="@+id/trainTimeDivider"
+            android:gravity="center"
+            android:text="Start - "
+            android:textColor="@color/colorAccent_0.8"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/trainTimeDivider"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAccent_0.2" />
+
+        <TextView
+            android:id="@+id/trainEndTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/trainTimeDivider"
+            android:layout_toRightOf="@+id/trainTimeDivider"
+            android:gravity="center"
+            android:text="Reach - "
+            android:textColor="@color/colorAccent_0.8"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/trainListViewBackgroundTint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#000000" />
+</RelativeLayout>

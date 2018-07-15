@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+        <item android:id="@+id/nav_bus" android:icon="@drawable/ic_directions_bus_black_24dp"
+            android:title="Bus"/>
+        <item android:id="@+id/nav_metro" android:icon="@drawable/ic_directions_subway_black_24dp"
+            android:title="Metro" />
+        <item android:id="@+id/nav_auto" android:icon="@drawable/auto_icon"
+            android:title="Auto" />
+        <item android:id="@+id/nav_train" android:icon="@drawable/ic_directions_railway_black_24dp"
+            android:title="Train" />
+        <item android:id="@+id/nav_tram" android:icon="@drawable/ic_directions_tram_black_24dp"
+            android:title="Tram" />
+        <item android:id="@+id/nav_taxi" android:icon="@drawable/ic_local_taxi_black_24dp"
+            android:title="Taxi" />
+        <item android:id="@+id/nav_ferry" android:icon="@drawable/ic_directions_boat_black_24dp"
+            android:title="Ferry" />
+        <item android:id="@+id/nav_emergency" android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Emergency" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item android:id="@+id/nav_rate" android:icon="@drawable/ic_stars_black_24dp"
+            android:title="Rate Us" />
+            <item android:id="@+id/nav_like" android:icon="@drawable/facebook_icon"
+                android:title="Like Us" />
+        </menu>
+    </item>
+
+</menu>

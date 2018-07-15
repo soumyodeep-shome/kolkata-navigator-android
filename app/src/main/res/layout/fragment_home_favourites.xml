@@ -1,0 +1,320 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    tools:context="com.thebrokegamers.kolkatanavigator.HomeFavouritesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/homeFavouritesTranslucentBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/home_favourites_background">
+
+        <RelativeLayout
+            android:id="@+id/homeFavouritesTopContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/homeFavouritesIconText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="SET FAVOURITE STOPS"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homeFavouritesTopButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/homeFavouritesTopContainer"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/homeFavouritesTopButtons"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/homeFavouritesBusImage"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesBusCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circle_container"
+                        android:tint="#1C3144"/>
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesBusIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_directions_bus_black_24dp"
+                        android:tint="#1C3144" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/homeFavouritesMetroImage"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesMetroCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circle_container"
+                        android:tint="#1C3144"/>
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesMetroIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_directions_subway_black_24dp"
+                        android:tint="#1C3144" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/homeFavouritesAutoImage"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesAutoCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circle_container"
+                        android:tint="#1C3144"/>
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesAutoIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/auto_icon"
+                        android:tint="#1C3144" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/homeFavouritesTrainImage"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesTrainCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circle_container"
+                        android:tint="#1C3144"/>
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesTrainIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_directions_railway_black_24dp"
+                        android:tint="#1C3144" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/homeFavouritesTramImage"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesTramCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circle_container"
+                        android:tint="#1C3144"/>
+
+                    <ImageView
+                        android:id="@+id/homeFavouritesTramIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_directions_tram_black_24dp"
+                        android:tint="#1C3144" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/homeFavouritesTopButtonsText"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@+id/homeFavouritesTopButtons"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/homeFavouritesBusText"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Bus"
+                    android:textColor="#1C3144" />
+                <TextView
+                    android:id="@+id/homeFavouritesMetroText"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Metro"
+                    android:textColor="#1C3144" />
+                <TextView
+                    android:id="@+id/homeFavouritesAutoText"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Auto"
+                    android:textColor="#1C3144" />
+                <TextView
+                    android:id="@+id/homeFavouritesTrainText"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Train"
+                    android:textColor="#1C3144" />
+                <TextView
+                    android:id="@+id/homeFavouritesTramText"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Tram"
+                    android:textColor="#1C3144" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/homeFavouritesTopButtonsContainer"
+            android:background="@color/colorPrimary">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/top_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginTop="2dp"
+                android:theme="@style/AppTheme.MyStyle">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sourceInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter Source..."
+                    android:inputType="textNoSuggestions|textCapCharacters"
+                    android:textColor="#FFFFFF"
+                    android:theme="@style/AppTheme.MyStyle"
+                    android:textSize="16sp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/reverseSourceDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reversible_arrows"
+                android:layout_alignTop="@+id/bottom_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_text"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginTop="2dp"
+                android:theme="@style/AppTheme.MyStyle">
+
+                <AutoCompleteTextView
+                    android:id="@+id/destinationInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter Destination..."
+                    android:inputType="textNoSuggestions|textCapCharacters"
+                    android:textColor="#FFFFFF"
+                    android:theme="@style/AppTheme.MyStyle"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/sourceDestinationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/source_destination_icon" />
+        </RelativeLayout>
+
+        
+        <TextView
+            android:id="@+id/homeFavouritesCloseButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="CLOSE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:background="#DDDDDD"
+            android:layout_alignTop="@+id/homeFavouritesCloseButton"
+            android:layout_toRightOf="@+id/homeFavouritesCloseButton"
+            android:layout_toEndOf="@+id/homeFavouritesCloseButton"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:id="@+id/homeFavouritesSetButton"
+            android:layout_toRightOf="@+id/homeFavouritesCloseButton"
+            android:layout_toEndOf="@+id/homeFavouritesCloseButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

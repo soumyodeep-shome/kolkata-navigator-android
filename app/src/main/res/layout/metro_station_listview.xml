@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <RelativeLayout
+        android:id="@+id/metroStationHolder"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/background_square_yellow">
+
+        <ImageView
+            android:id="@+id/metroImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/metroHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_directions_subway_black_24dp"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/metroHeader"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="METRO"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/metroStationName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/metroStationHolder"
+        android:layout_toEndOf="@+id/metroStationHolder"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent_0.8"/>
+
+</RelativeLayout>

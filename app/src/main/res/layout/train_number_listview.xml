@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/trainNumberListViewIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:src="@drawable/transport_number_listview_icon_1" />
+
+    <TextView
+        android:id="@+id/trainNumberListViewStoppage"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toEndOf="@+id/trainNumberListViewIcon"
+        android:layout_toLeftOf="@+id/trainNumberListViewTime"
+        android:layout_toRightOf="@+id/trainNumberListViewIcon"
+        android:layout_toStartOf="@+id/trainNumberListViewTime"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorAccent_0.8"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/trainNumberListViewTime"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="22:49"
+        android:textColor="@color/colorAccent_0.6"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/trainNumberListViewTime"
+        android:layout_toStartOf="@+id/trainNumberListViewTime"
+        android:background="@color/colorAccent_0.2" />
+
+</RelativeLayout>
